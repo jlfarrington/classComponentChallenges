@@ -1,8 +1,9 @@
-import React from 'react';
-// import SearchIndex from './SearchIndex';
+import React, { Component } from 'react';
+import SearchIndex from './SearchIndex';
 import { Container } from 'reactstrap';
  
-const Search = () => {
+export default class Search extends Component {
+  render() {
    return (
      <Container className="App">
      <br />
@@ -22,10 +23,8 @@ const Search = () => {
          </li>
        </ul>
        <hr />
-       {/* <SearchIndex /> */}
+       <SearchIndex />
      </Container>
    );
-
-}
- 
-export default Search;
+   }
+};

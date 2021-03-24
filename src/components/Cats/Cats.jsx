@@ -1,8 +1,9 @@
-import React from 'react';
-// import CatIndex from './CatIndex'
+import React, { Component } from 'react';
+import CatIndex from './CatIndex'
 import { Container } from 'reactstrap';
  
-const Cats = () => {
+export default class Cats extends Component {
+  render() {
    return (
      <Container className="App">
        <br/>
@@ -19,10 +20,8 @@ const Cats = () => {
          <li>Ensure there are no errors</li>
         </ul>
         <hr />
-       {/* <CatIndex /> */}
+      <CatIndex />
      </Container>
    );
-
-}
- 
-export default Cats;
+   }
+  }
